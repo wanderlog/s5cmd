@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/peak/s5cmd/v2/strutil"
+	"github.com/wanderlog/s5cmd/v2/strutil"
 )
 
 // createExcludesFromWildcard creates regex strings from wildcard.

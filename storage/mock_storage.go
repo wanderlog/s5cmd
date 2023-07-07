@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	url "github.com/peak/s5cmd/v2/storage/url"
+	url "github.com/wanderlog/s5cmd/v2/storage/url"
 )
 
 // MockStorage is a mock of Storage interface.

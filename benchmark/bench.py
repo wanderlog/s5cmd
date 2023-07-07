@@ -494,7 +494,7 @@ def build_s5cmd_exec(old, new, local_dir):
             "-C",
             local_dir,
             "clone",
-            "https://github.com/peak/s5cmd.git",
+            "https://github.com/wanderlog/s5cmd.git",
             "-q",
         ]
     )

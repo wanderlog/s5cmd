@@ -7,11 +7,11 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/urfave/cli/v2"
 
-	errorpkg "github.com/peak/s5cmd/v2/error"
-	"github.com/peak/s5cmd/v2/log"
-	"github.com/peak/s5cmd/v2/log/stat"
-	"github.com/peak/s5cmd/v2/storage"
-	"github.com/peak/s5cmd/v2/storage/url"
+	errorpkg "github.com/wanderlog/s5cmd/v2/error"
+	"github.com/wanderlog/s5cmd/v2/log"
+	"github.com/wanderlog/s5cmd/v2/log/stat"
+	"github.com/wanderlog/s5cmd/v2/storage"
+	"github.com/wanderlog/s5cmd/v2/storage/url"
 )
 
 var deleteHelpTemplate = `Name:
@@ -38,7 +38,7 @@ Examples:
 
 	5. Delete all matching objects but exclude the ones with .txt extension or starts with "main"
 		 > s5cmd {{.HelpName}} --exclude "*.txt" --exclude "main*" "s3://bucketname/prefix/*"
-	
+
 	6. Delete the specific version of a remote object's content to stdout
 		 > s5cmd {{.HelpName}} --version-id VERSION_ID s3://bucket/prefix/object
 
@@ -47,7 +47,7 @@ Examples:
 
 	8. Delete all versions of all objects that starts with a prefix in the bucket
 		 > s5cmd {{.HelpName}} --all-versions "s3://bucket/prefix*"
-   
+
 	9. Delete all versions of all objects in the bucket
 		 > s5cmd {{.HelpName}} --all-versions "s3://bucket/*"
 `

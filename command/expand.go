@@ -5,9 +5,9 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/peak/s5cmd/v2/atomic"
-	"github.com/peak/s5cmd/v2/storage"
-	"github.com/peak/s5cmd/v2/storage/url"
+	"github.com/wanderlog/s5cmd/v2/atomic"
+	"github.com/wanderlog/s5cmd/v2/storage"
+	"github.com/wanderlog/s5cmd/v2/storage/url"
 )
 
 // expandSource returns the full list of objects from the given src argument.

@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/peak/s5cmd/v2/storage"
-	"github.com/peak/s5cmd/v2/storage/url"
+	"github.com/wanderlog/s5cmd/v2/storage"
+	"github.com/wanderlog/s5cmd/v2/storage/url"
 	"github.com/urfave/cli/v2"
 )
 
@@ -72,7 +72,7 @@ _s5cmd_cli_bash_autocomplete() {
 	fi
 }
 
-# call the _s5cmd_cli_bash_autocomplete to complete s5cmd command. 
+# call the _s5cmd_cli_bash_autocomplete to complete s5cmd command.
 complete -o nospace -F _s5cmd_cli_bash_autocomplete s5cmd
 `
 

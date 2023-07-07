@@ -10,11 +10,11 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/urfave/cli/v2"
 
-	errorpkg "github.com/peak/s5cmd/v2/error"
-	"github.com/peak/s5cmd/v2/log/stat"
-	"github.com/peak/s5cmd/v2/parallel"
-	"github.com/peak/s5cmd/v2/storage"
-	"github.com/peak/s5cmd/v2/storage/url"
+	errorpkg "github.com/wanderlog/s5cmd/v2/error"
+	"github.com/wanderlog/s5cmd/v2/log/stat"
+	"github.com/wanderlog/s5cmd/v2/parallel"
+	"github.com/wanderlog/s5cmd/v2/storage"
+	"github.com/wanderlog/s5cmd/v2/storage/url"
 )
 
 var selectHelpTemplate = `Name:

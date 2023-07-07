@@ -14,12 +14,12 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/urfave/cli/v2"
 
-	errorpkg "github.com/peak/s5cmd/v2/error"
-	"github.com/peak/s5cmd/v2/log"
-	"github.com/peak/s5cmd/v2/log/stat"
-	"github.com/peak/s5cmd/v2/parallel"
-	"github.com/peak/s5cmd/v2/storage"
-	"github.com/peak/s5cmd/v2/storage/url"
+	errorpkg "github.com/wanderlog/s5cmd/v2/error"
+	"github.com/wanderlog/s5cmd/v2/log"
+	"github.com/wanderlog/s5cmd/v2/log/stat"
+	"github.com/wanderlog/s5cmd/v2/parallel"
+	"github.com/wanderlog/s5cmd/v2/storage"
+	"github.com/wanderlog/s5cmd/v2/storage/url"
 )
 
 const (
@@ -100,7 +100,7 @@ Examples:
 
 	21. Upload a file to S3 with a content-type and content-encoding header
 		 > s5cmd --content-type "text/css" --content-encoding "br" myfile.css.br s3://bucket/
-		 
+
 	22. Download the specific version of a remote object to working directory
 		 > s5cmd {{.HelpName}} --version-id VERSION_ID s3://bucket/prefix/object .
 `
